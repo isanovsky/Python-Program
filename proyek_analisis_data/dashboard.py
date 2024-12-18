@@ -9,7 +9,7 @@ import streamlit as st
 # Import data
 @st.cache_data
 def load_data():
-    data = pd.read_csv('data.csv') 
+    data = pd.read_csv('D:\Python Program\proyek_analisis_data\data.csv') 
     data['dteday'] = pd.to_datetime(data['dteday'])
     data['month'] = data['dteday'].dt.strftime('%Y-%m') 
     weather_mapping = {1: 'Clear', 2: 'Cloudy', 3: 'Light Snow, Light Rain', 4: 'Heavy Rain'}
