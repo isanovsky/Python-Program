@@ -1,6 +1,6 @@
 import math
 
-print("-" * 45 + "Newton Raphson Method" + "-" * 45)
+print("-" * 20 + "Newton Raphson Method" + "-" * 20)
 def newton_raphson(xi, tolerance, max_iterations):
     # F(x) 
     f = lambda x: math.log(x) - 1 - 1 / (x ** 2)

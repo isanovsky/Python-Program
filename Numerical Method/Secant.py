@@ -1,7 +1,7 @@
 import math
 
 print("-" * 45 + "Secant Method" + "-" * 45)
-def secant_method(f, x0, x1, tolerance=0.5e-5, max_iterations=100):
+def secant_method(f, x0, x1, tolerance=0.5e-7, max_iterations=100):
     print(f"{'Iteration':<10} {'xi-1':<12} {'x1':<12} {'xi+1':<12} {'f(xi-1)':<12} {'f(xi)':<12} {'f(xi+1)':<12} {'error %':<12}")
     print("-" * 103)
     iteration = 0
